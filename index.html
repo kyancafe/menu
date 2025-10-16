@@ -8,12 +8,30 @@
     <meta name="keywords" content="" />
     <link href="assets/img/favicon.png" rel="icon" />
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Roboto -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</noscript>
+
+<!-- Poppins -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</noscript>
+
+<!-- Playfair Display -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</noscript>
+
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    /></noscript>
+
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,10 +47,6 @@
     />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="assets/css/main.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
-    />
   </head>
 
   <body class="index-page">
@@ -78,6 +92,7 @@
     <main class="main">
       <section id="hero" class="hero section dark-background">
         <img
+          loading="lazy"
           src="assets/img/kyan1.jpg"
           alt=""
           data-aos="fade-in"
@@ -85,7 +100,7 @@
             width: 100%;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-            filter: brightness(1.05) contrast(1.1) saturate(1.1) blur(1.5px);
+            filter: brightness(1.05) contrast(1.1) saturate(1.1) blur(1px);
             transition: all 0.4s ease;
           "
         />
@@ -147,14 +162,22 @@
             id="filterable-cards"
           >
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Ice shaken white moka.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Ice shaken white moka.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Ice shaken white moka</h6>
                 <p class="card-text">6000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Ice Americano.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Ice Americano.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Ice Americano</h6>
                 <p class="card-text">4500</p>
@@ -162,49 +185,77 @@
             </div>
 
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Ice Mocha.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Ice Mocha.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Ice Mocha</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Ice Caramel Mechiato.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Ice Caramel Mechiato.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Ice Caramel Mechiato</h6>
                 <p class="card-text">6000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/lce Latte.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/lce Latte.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">lce Latte</h6>
                 <p class="card-text">5000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Ice Spanish Latte.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Ice Spanish Latte.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Ice Spanish Latte</h6>
                 <p class="card-text">6000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Ice Chocolate 6000.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Ice Chocolate 6000.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Ice Chocolate</h6>
                 <p class="card-text">6000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Mocha Oreo.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Mocha Oreo.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Mocha Oreo</h6>
                 <p class="card-text">6000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Ice Coffee">
-              <img src="assets/img/menu/Mocha Snickers.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Mocha Snickers.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Mocha Snickers</h6>
                 <p class="card-text">6000</p>
@@ -214,70 +265,106 @@
             <!-- HOT COFFEE -->
 
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Saudi Coffee.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Saudi Coffee.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Saudi Coffee</h6>
                 <p class="card-text">2000</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Americano.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Americano.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Americano</h6>
                 <p class="card-text">2500</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Espresso.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Espresso.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Espresso</h6>
                 <p class="card-text">2000</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Latte.jpg" alt="img" />
+              <img loading="lazy" src="assets/img/menu/Latte.jpg" alt="img" />
               <div class="card-body">
                 <h6 class="card-title">Latte</h6>
                 <p class="card-text">4000</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Cappuccino.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Cappuccino.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Cappuccino</h6>
                 <p class="card-text">4000</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Flat White.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Flat White.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Flat White</h6>
                 <p class="card-text">4000</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Italian Coffee.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Italian Coffee.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Italian Coffee</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Mocha hot.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Mocha hot.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Mocha</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Hot Chocolate.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Hot Chocolate.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Hot Chocolate</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="HOT COFFEE">
-              <img src="assets/img/menu/Turkish Coffee.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Turkish Coffee.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Turkish Coffee</h6>
                 <p class="card-text">3000</p>
@@ -287,42 +374,66 @@
             <!-- TEA -->
 
             <div class="card p-0" data-name="TEA">
-              <img src="assets/img/menu/Regular Tea.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Regular Tea.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Regular Tea</h6>
                 <p class="card-text">1500</p>
               </div>
             </div>
             <div class="card p-0" data-name="TEA">
-              <img src="assets/img/menu/Talqeema Tea.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Talqeema Tea.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Talqeema Tea</h6>
                 <p class="card-text">1500</p>
               </div>
             </div>
             <div class="card p-0" data-name="TEA">
-              <img src="assets/img/menu/Green Tea.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Green Tea.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Green Tea</h6>
                 <p class="card-text">1750</p>
               </div>
             </div>
             <div class="card p-0" data-name="TEA">
-              <img src="assets/img/menu/Milk Tea.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Milk Tea.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Milk Tea</h6>
                 <p class="card-text">2000</p>
               </div>
             </div>
             <div class="card p-0" data-name="TEA">
-              <img src="assets/img/menu/Karak Tea.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Karak Tea.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Karak Tea</h6>
                 <p class="card-text">2500</p>
               </div>
             </div>
             <div class="card p-0" data-name="TEA">
-              <img src="assets/img/menu/Scandinavian Tea.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Scandinavian Tea.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Scandinavian Tea</h6>
                 <p class="card-text">2500</p>
@@ -332,28 +443,44 @@
             <!-- Cake -->
 
             <div class="card p-0" data-name="Cake">
-              <img src="assets/img/menu/Chocolate Muffin.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Chocolate Muffin.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Chocolate Muffin</h6>
                 <p class="card-text">2500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Cake">
-              <img src="assets/img/menu/Blueberry Muffin.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Blueberry Muffin.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Blueberry Muffin</h6>
                 <p class="card-text">2500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Cake">
-              <img src="assets/img/menu/Croissant.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Croissant.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Butter Croissant</h6>
                 <p class="card-text">2500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Cake">
-              <img src="assets/img/menu/Croissant.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Croissant.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Cheese Croissant</h6>
                 <p class="card-text">3000</p>
@@ -361,7 +488,7 @@
             </div>
 
             <div class="card p-0" data-name="Cake">
-              <img src="assets/img/menu/Um Ali.jpg" alt="img" />
+              <img loading="lazy" src="assets/img/menu/Um Ali.jpg" alt="img" />
               <div class="card-body">
                 <h6 class="card-title">Um Ali</h6>
                 <p class="card-text">5000</p>
@@ -370,7 +497,11 @@
 
             <!-- DRINKS AND JUICES -->
             <div class="card p-0" data-name="DRINKS AND JUICES">
-              <img src="assets/img/menu/Lemon with Mint.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Lemon with Mint.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Lemon with Mint</h6>
                 <p class="card-text">4000</p>
@@ -380,6 +511,7 @@
             <!-- Dessert -->
             <div class="card p-0" data-name="Dessert">
               <img
+                loading="lazy"
                 src="assets/img/menu/Chocolate Fettuccine crepe.jpg"
                 alt="img"
               />
@@ -389,7 +521,11 @@
               </div>
             </div>
             <div class="card p-0" data-name="Dessert">
-              <img src="assets/img/menu/Mixed Fettuccine crepe.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Mixed Fettuccine crepe.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Mixed Fettuccine Crêpe</h6>
                 <p class="card-text">5500</p>
@@ -397,6 +533,7 @@
             </div>
             <div class="card p-0" data-name="Dessert">
               <img
+                loading="lazy"
                 src="assets/img/menu/Pistachio Fettuccine Crêpe.jpg"
                 alt="img"
               />
@@ -406,21 +543,33 @@
               </div>
             </div>
             <div class="card p-0" data-name="Dessert">
-              <img src="assets/img/menu/Chocolate Croissant.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Chocolate Croissant.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Chocolate Croissant</h6>
                 <p class="card-text">5000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Dessert">
-              <img src="assets/img/menu/Pistachio Croissant.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Pistachio Croissant.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Pistachio Croissant</h6>
                 <p class="card-text">5500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Dessert">
-              <img src="assets/img/menu/Mixed Croissant.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Mixed Croissant.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Mixed Croissant</h6>
                 <p class="card-text">5500</p>
@@ -430,21 +579,33 @@
             <!-- Special Drinks -->
 
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Kyan Black.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Kyan Black.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Kyan Black</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Kyan Green.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Kyan Green.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Kyan Green</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Kyan Red.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Kyan Red.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Kyan Red</h6>
                 <p class="card-text">4500</p>
@@ -452,6 +613,7 @@
             </div>
             <div class="card p-0" data-name="Special Drinks">
               <img
+                loading="lazy"
                 src="assets/img/menu/Kyan Ginger Ale (Mojito).jpg"
                 alt="img"
               />
@@ -461,49 +623,73 @@
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Kyan Watermelon.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Kyan Watermelon.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Kyan Watermelon</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Twin Turbo.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Twin Turbo.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Twin Turbo</h6>
                 <p class="card-text">5000</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Roshan Black.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Roshan Black.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Roshan Black</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Roshan Red.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Roshan Red.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Roshan Red</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Roshan Blue.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Roshan Blue.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Roshan Blue</h6>
                 <p class="card-text">4500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/Slush blue.jpg" alt="img" />
+              <img
+                loading="lazy"
+                src="assets/img/menu/Slush blue.jpg"
+                alt="img"
+              />
               <div class="card-body">
                 <h6 class="card-title">Slush blue</h6>
                 <p class="card-text">3500</p>
               </div>
             </div>
             <div class="card p-0" data-name="Special Drinks">
-              <img src="assets/img/menu/lce Tea.jpg" alt="img" />
+              <img loading="lazy" src="assets/img/menu/lce Tea.jpg" alt="img" />
               <div class="card-body">
                 <h6 class="card-title">lce Tea</h6>
                 <p class="card-text">4500</p>
@@ -524,6 +710,7 @@
 
         <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
           <iframe
+            loading="lazy"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.640333852895!2d44.002733275323216!3d36.22393609997234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x400919001159a63b%3A0x49a085fcfc0cfe5e!2sKyan%20Zakho!5e0!3m2!1sen!2siq!4v1760572348511!5m2!1sen!2siq"
             width="600"
             height="450"
@@ -581,7 +768,6 @@
             >
               <span class="sitename">Kyan Cafe</span>
             </a>
-            
           </div>
         </div>
       </div>
